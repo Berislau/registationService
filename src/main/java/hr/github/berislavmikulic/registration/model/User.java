@@ -13,21 +13,27 @@ import java.time.LocalDate;
 public class User {
     @NonNull
     private Long id;
+
     @NotBlank
     private String firstName;
+
     @NotBlank
     private String lastName;
+
     @NonNull
     @NotBlank
     @Size(min=3, max = 50)
     private String userName;
+
     @NonNull
     @NotBlank
     @Size(min=8, max = 100)
     private String password;
+
     @NotBlank
     @Email
     private String email;
+
     private LocalDate dateOfBirth;
     private String address;
 }
